@@ -1,0 +1,16 @@
+/* 自定义滑块样式 */
+input[type="range"].slider-long::-webkit-slider-thumb {
+  background-color: green;
+}
+
+input[type="range"].slider-short::-webkit-slider-thumb {
+  background-color: red;
+}
+
+input[type="range"].slider-long {
+  background: linear-gradient(to right, green 0%, green var(--value), #d3d3d3 var(--value), #d3d3d3 100%);
+}
+
+input[type="range"].slider-short {
+  background: linear-gradient(to right, red 0%, red var(--value), #d3d3d3 var(--value), #d3d3d3 100%);
+}
